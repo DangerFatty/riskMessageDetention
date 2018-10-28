@@ -19,8 +19,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_board2" />
-                            <entry key="sourceFile" value="D:\Program\Android\riskMessageDetention\app\src\main\res\drawable-v24\Board2.svg" />
+                            <entry key="outputName" value="ic_result20" />
+                            <entry key="sourceFile" value="D:\Program\Android\riskMessageDetention\app\src\main\res\Result20.svg" />
                           </map>
                         </option>
                       </PersistentState>

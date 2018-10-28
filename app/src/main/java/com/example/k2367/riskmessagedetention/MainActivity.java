@@ -1,17 +1,9 @@
 package com.example.k2367.riskmessagedetention;
 
-import android.content.BroadcastReceiver;
 import android.content.Intent;
-import android.content.IntentFilter;
-import android.graphics.drawable.Drawable;
-import android.net.ConnectivityManager;
-import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
-
-import com.roughike.bottombar.*;
 
 public class MainActivity extends AppCompatActivity {
     // 發送廣播事件用的Action名稱
@@ -21,23 +13,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        ImageButton ibBoard = (ImageButton)findViewById(R.id.ibBoard);
-        ibBoard.setOnClickListener(new View.OnClickListener(){
-                @Override
-                public void onClick(View v){
-                    ImageButton ib = (ImageButton) findViewById(R.id.ibBoard);
-                    Drawable board1 = getResources().getDrawable(R.drawable.ic_board);
-                    Drawable board2 = getResources().getDrawable(R.drawable.ic_board);
-
-                    if(ib.getDrawable() == board1)
-                        ib.setImageDrawable(board2);
-                    else
-                        ib.setImageDrawable(board1);
-                }
-            }
-        );
-
 
 //        Intent intent = new Intent(BROADCAST_ACTION);
 //
@@ -84,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     protected void btnPage2_click(View v)
     {
         Intent intent = new Intent();
-        intent.setClass(MainActivity.this , MainActivity2.class);
+        intent.setClass(MainActivity.this , messageDetection.class);
         startActivity(intent);
     }
 

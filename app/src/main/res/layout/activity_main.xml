@@ -31,15 +31,14 @@
         app:bb_tabXmlResource="@xml/bottombar_tabs" />
 
     <Button
-        android:id="@+id/btnPage2"
+        android:id="@+id/btnDetection"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="82dp"
         android:onClick="btnPage2_click"
-        android:text="Button"
-        tools:text="@string/testButton" />
+        android:text="簡訊檢測" />
 
     <ImageButton
         android:id="@+id/ibBoard"
@@ -48,7 +47,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:background="#00000000"
+        android:onClick="ibBoard_click"
         android:scaleType="fitXY"
+        android:clickable="true"
         app:srcCompat="@drawable/ic_board" />
 
 </RelativeLayout>
