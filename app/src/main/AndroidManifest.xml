@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,11 +16,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- 使用receiver標籤，名稱設定廣播接收元件類別名稱 -->
-        <receiver android:name="MyBroadcastReceiver">
+        <activity android:name=".MainActivity2">
             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 使用receiver標籤，名稱設定廣播接收元件類別名稱 -->
+        <receiver android:name=".MyBroadcastReceiver">
+            <intent-filter>
+
                 <!-- 使用Action名稱設定接收的廣播事件 -->
-                <action android:name = "MainActivity" />
+                <action android:name="MainActivity" />
             </intent-filter>
         </receiver>
     </application>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">riskMessageDetention</string>
+    <string name="testButton">testButton1</string>
+    <string name="textView_p2">訊息檢測:</string>
 </resources>
